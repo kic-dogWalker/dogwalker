@@ -61,8 +61,6 @@ let basket = {
         //전송 처리 결과가 성공이면    
         this.reCalc();
         this.updateUI();
-        
-        
     },
     checkItem: function () {
         this.reCalc();
@@ -83,7 +81,3 @@ Number.prototype.formatNumber = function(){
     while (regex.test(nstr)) nstr = nstr.replace(regex, '$1' + ',' + '$2');
     return nstr;
 };
-
-function addToCart() {
-        alert("장바구니에 추가되었습니다.");
-    }

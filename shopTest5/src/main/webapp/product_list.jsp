@@ -21,25 +21,25 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!"><img src="img/logo2.png" width="100"  alt="..."></a>
+                <a class="navbar-brand" href="#!"><img src="img/logo.png" width="100" height="100" alt="..."></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="main.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="product_list.jsp">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="product_list.jsp">전체 상품</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="product_list_cate1.jsp">간식</a></li>
-                                <li><a class="dropdown-item" href="product_list_cate2.jsp">장난감</a></li>
-                                <li><a class="dropdown-item" href="product_list_cate3.jsp">사료</a></li>
+                                <li><a class="dropdown-item" href="product_list_cate1.html">간식</a></li>
+                                <li><a class="dropdown-item" href="product_list_cate2.html">장난감</a></li>
+                                <li><a class="dropdown-item" href="product_list_cate3.html">사료</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#!">예약</a></li>
                     </ul>
-                    <form class="d-flex" action="#">
+                    <form class="d-flex" action="cart.html">
                         <button class="btn btn-outline-dark" type="submit" >
                             <i class="bi-cart-fill me-1"></i>
                             장바구니
@@ -68,7 +68,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.jsp">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.jsp">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.jsp">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.jsp">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.jsp">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.jsp">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.jsp">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.jsp">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">View options</a></div>
                             </div>
                         </div>
                     </div>
