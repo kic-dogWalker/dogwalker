@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*{
+	padding:0px;
+	margin:0px;
+	color:#000;
+}
+
+.ListBox{
+    background: #eee;
+    width: 30%;
+    padding: 0px 25px 25px 25px;
+}
+
+.ListLabel{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.List{
+    list-style: none;
+}
+
+.List > a{
+    display:block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.List > a:hover{
+    background: #999;
+}
+
+.List > a:hover li {color: #fff;}
+
+
+
+
+
+
+
+
+
+
