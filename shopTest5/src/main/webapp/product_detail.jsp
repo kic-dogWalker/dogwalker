@@ -8,11 +8,6 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Shop Item - Start Bootstrap Template</title>
-        <script type="text/javascript">
-			$(function(){
-				
-		 	})
-		</script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -20,7 +15,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/cart2.css" rel="stylesheet" />
+        <link href="css/cart.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
@@ -37,9 +32,9 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="product_list.jsp">전체 상품</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="product_list_cate1.html">간식</a></li>
-                                <li><a class="dropdown-item" href="product_list_cate2.html">장난감</a></li>
-                                <li><a class="dropdown-item" href="product_list_cate3.html">사료</a></li>
+                                <li><a class="dropdown-item" href="product_list_cate1.jsp">간식</a></li>
+                                <li><a class="dropdown-item" href="product_list_cate2.jsp">장난감</a></li>
+                                <li><a class="dropdown-item" href="product_list_cate3.jsp">사료</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#!">예약</a></li>
@@ -55,12 +50,37 @@
         </nav>
         <!-- Product section-->
         <section class="py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." /></div>
+            <div class="container px-4 px-lg-5 my-5" >
+                <div class="row gx-4 gx-lg-5 align-items-center" id="product-detail">
+                    <!-- productDetail  -->
+                </div>
+            </div>
+        </section>
+        <!-- Related items section-->
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/cart.js"></script>
+        <script>
+		$(document).ready(function(){
+			 console.log("Document ready");
+			// 상품 데이터 배열
+			var productsDetail = [
+				{image:"https://dummyimage.com/450x300/dee2e6/6c757d.jpg",name:"간식2",price:"20000원",num:"12345"}
+				];
+			// 상품 카드 생성
+			$.each(productsDetail,function(index,productDetail){
+				console.log(index, productDetail);
+				var productDetail = `
+					<div class="col-md-6">`+ "<img class='card-img-top mb-5 mb-md-0' src='" + productDetail.image +"' alt='...' />"+`</div>
                     <div class="col-md-6">
-                        <div class="small mb-1">상품번호 : </div>
-                        <h1 class="display-5 fw-bolder">Shop item template</h1>
+                        <div class="small mb-1">` + productDetail.num + `</div>
+                        <h1 class="display-5 fw-bolder">` + productDetail.name + `</h1>
                         <div class="fs-5 mb-5">
                             <div class="row data">
 			                    <div class="subdiv">
@@ -72,7 +92,7 @@
 			                                <span onclick="javascript:basket.changePNum(1);"><i class="fas fa-arrow-alt-circle-down down"></i></span>
 			                            </div>
 			                        </div>
-			                        <div class="sum">20000원</div>
+			                        <div class="sum">` + productDetail.price + `</div>
 			                    </div>
                         	</div>
                         <p class="lead">제품설명</p>
@@ -86,20 +106,12 @@
                                 바로구매
                             </button>
                         </div>
-                </div>
+                		</div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Related items section-->
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="js/cart.js"></script>
+				`;
+				$("#product-detail").append(productDetail);
+			});
+		});
+</script>
     </body>
 </html>
